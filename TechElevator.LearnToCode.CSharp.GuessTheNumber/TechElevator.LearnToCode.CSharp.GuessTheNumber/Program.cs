@@ -7,26 +7,32 @@ namespace TechElevator.LearnToCode.CSharp.GuessTheNumber
         static void Main(string[] args)
         {
             int secretNumber = 42;
+            int userNumber = 0;
 
-            // Get User Input
-            Console.WriteLine("Enter a Number");
-
-            string userNumberText = Console.ReadLine();
-            int userNumber = int.Parse(userNumberText);
-
-            Console.WriteLine("You entered: " + userNumber);
-
-            if (userNumber == secretNumber)
+            while (userNumber != secretNumber)
             {
-                Console.WriteLine("That was the number I was thinking of! Amazing!");
-            }
-            else if (userNumber < secretNumber)
-            {
-                Console.WriteLine("Nope. The number I'm thinking of is greater than that");
-            }
-            else
-            {
-                Console.WriteLine("Nope. The number I'm thinking of is less than that");
+                // Get User Input
+                Console.WriteLine("Enter a Number");
+
+                string userNumberText = Console.ReadLine();
+                userNumber = int.Parse(userNumberText);
+
+                Console.WriteLine("You entered: " + userNumber);
+
+                if (userNumber == secretNumber)
+                {
+                    Console.WriteLine("That was the number I was thinking of! Amazing!");
+                }
+                else if (userNumber < secretNumber)
+                {
+                    Console.WriteLine("Nope. The number I'm thinking of is greater than that");
+                }
+                else
+                {
+                    Console.WriteLine("Nope. The number I'm thinking of is less than that");
+                }
+
+                Console.WriteLine();
             }
         }
     }
