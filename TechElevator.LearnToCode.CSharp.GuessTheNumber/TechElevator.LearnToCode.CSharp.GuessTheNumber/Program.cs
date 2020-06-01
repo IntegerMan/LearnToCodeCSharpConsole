@@ -19,10 +19,14 @@ namespace TechElevator.LearnToCode.CSharp.GuessTheNumber
             if (userNumber == secretNumber)
             {
                 Console.WriteLine("That was the number I was thinking of! Amazing!");
-            } 
+            }
+            else if (userNumber < secretNumber)
+            {
+                Console.WriteLine("Nope. The number I'm thinking of is greater than that");
+            }
             else
             {
-                Console.WriteLine("Nope. That wasn't my number.");
+                Console.WriteLine("Nope. The number I'm thinking of is less than that");
             }
         }
     }
