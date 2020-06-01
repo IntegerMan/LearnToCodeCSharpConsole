@@ -6,7 +6,9 @@ namespace TechElevator.LearnToCode.CSharp.GuessTheNumber
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string greetingText = "Hello Variables";
+
+            Console.WriteLine(greetingText);
         }
     }
 }
