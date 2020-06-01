@@ -17,6 +17,14 @@ namespace TechElevator.LearnToCode.CSharp.GuessTheNumber
             int num2 = 2;
             int result = num1 + num2;
             Console.WriteLine(num1 + " + " + num2 + " = " + result);
+
+            // Get User Input
+            Console.WriteLine("Enter a Number");
+
+            string userNumberText = Console.ReadLine();
+            int userNumber = int.Parse(userNumberText);
+
+            Console.WriteLine("You entered: " + userNumber);
         }
     }
 }
