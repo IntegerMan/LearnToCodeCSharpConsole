@@ -16,10 +16,7 @@ namespace TechElevator.LearnToCode.CSharp.GuessTheNumber
             int num1 = 2;
             int num2 = 2;
             int result = num1 + num2;
-
-            Console.WriteLine("First Number: " + num1);
-            Console.WriteLine("Second Number: " + num2);
-            Console.WriteLine("Result: " + result);
+            Console.WriteLine(num1 + " + " + num2 + " = " + result);
         }
     }
 }
