@@ -36,7 +36,7 @@ namespace TechElevator.LearnToCode.CSharp.GuessTheNumber
 
                 Console.WriteLine();
 
-                numGuesses = numGuesses + 1;
+                numGuesses++;
             }
 
             Console.WriteLine("You guessed the number after " + numGuesses + " guesses! Good job!");
