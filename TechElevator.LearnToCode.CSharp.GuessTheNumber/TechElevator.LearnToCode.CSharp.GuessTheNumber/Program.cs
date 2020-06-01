@@ -6,13 +6,14 @@ namespace TechElevator.LearnToCode.CSharp.GuessTheNumber
     {
         static void Main(string[] args)
         {
-            int secretNumber = 42;
+            Random randomizer = new Random();
+            int secretNumber = randomizer.Next(1, 100);
             int userNumber = 0;
 
             while (userNumber != secretNumber)
             {
                 // Get User Input
-                Console.WriteLine("Enter a Number");
+                Console.WriteLine("Enter a Number between 1 and 100");
 
                 string userNumberText = Console.ReadLine();
                 userNumber = int.Parse(userNumberText);
