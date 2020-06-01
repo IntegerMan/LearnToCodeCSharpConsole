@@ -9,6 +9,7 @@ namespace TechElevator.LearnToCode.CSharp.GuessTheNumber
             Random randomizer = new Random();
             int secretNumber = randomizer.Next(1, 100);
             int userNumber = 0;
+            int numGuesses = 0;
 
             while (userNumber != secretNumber)
             {
@@ -34,7 +35,11 @@ namespace TechElevator.LearnToCode.CSharp.GuessTheNumber
                 }
 
                 Console.WriteLine();
+
+                numGuesses = numGuesses + 1;
             }
+
+            Console.WriteLine("You guessed the number after " + numGuesses + " guesses! Good job!");
         }
     }
 }
